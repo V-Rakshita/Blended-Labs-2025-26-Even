@@ -3,7 +3,9 @@
 ## Title
 
 Scale and Load Balance Your Architecture
-Author : your name   Reg no : yours   Date :
+Author : RAKSHITA V
+Reg no : 212224100049
+Date : 10.03.2026
 
 ---
 
@@ -68,12 +70,38 @@ Students test the setup by generating traffic and observing automatic scaling an
 
 Describe step-by-step how you performed this experiment in your own words.
 
----
+1. Reviewed the existing EC2 architecture created in previous labs to understand the application setup.
+
+2. Created a launch template by selecting the AMI, instance type, security group, and adding required configurations.
+
+3. Created an Auto Scaling Group using the launch template and set the minimum, maximum, and desired number of instances.
+
+4. Configured an Application Load Balancer and created a target group to route traffic to EC2 instances.
+
+5. Attached the Auto Scaling Group to the load balancer target group so instances can receive traffic.
+
+6. Set scaling policies using Amazon CloudWatch alarms based on CPU utilization.
+
+7. Generated traffic to test load balancing and verified that instances scaled automatically based on demand.
 
 ## Output Screenshots 
 
+<img width="1920" height="1080" alt="Screenshot (794)" src="https://github.com/user-attachments/assets/73487ead-393b-4984-ad66-e998e0f3c24d" />
 
----
+<img width="1920" height="1080" alt="Screenshot (796)" src="https://github.com/user-attachments/assets/6955513d-9bf2-4c3a-be9c-1374f6acf918" />
+
+<img width="1920" height="1080" alt="Screenshot (798)" src="https://github.com/user-attachments/assets/3eae958f-84f1-4a31-b72d-21784987e0d5" />
+
+<img width="1920" height="1080" alt="Screenshot (799)" src="https://github.com/user-attachments/assets/4cd504af-2809-43a0-be2a-0f8e8e058d6c" />
+
+
+<img width="1920" height="1080" alt="Screenshot (800)" src="https://github.com/user-attachments/assets/24e1f5dc-cf14-486a-97da-4b995a96d4fa" />
+
+
+<img width="1920" height="1080" alt="Screenshot (802)" src="https://github.com/user-attachments/assets/a8ea1676-e609-4ff2-b880-ecd91c315550" />
+
+
+
 
 
 ## Result
